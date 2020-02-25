@@ -8,14 +8,6 @@ describe Membership do
     # Use `before(:each)` to run this before every test!
     before(:each) do
 
-        # Clear all existing instances from classes
-        classes = [Lifter, Membership, Gym]
-        classes.each do |class_|
-            if class_.class_variable_defined?(:@@all)
-                class_.class_variable_set(:@@all, [])
-            end
-        end
-
         # Create some Lifters
         @lifter_1 = Lifter.new('Lifter 1', 100)
         @lifter_2 = Lifter.new('Lifter 2', 200)
@@ -30,6 +22,18 @@ describe Membership do
         @membership_3 = Membership.new(@lifter_2, @gym_2, 100)
     end
 
+    # Use `after(:each)` to run this after every test!
+    after(:each) do
+
+        # Clear all existing instances from classes
+        [Lifter, Membership, Gym].each do |class_|
+            if class_.class_variable_defined?(:@@all)
+                class_.class_variable_set(:@@all, [])
+            end
+        end
+    
+    end
+    
     context 'class method' do
 
         it '.all returns an array of all Membership instances' do
