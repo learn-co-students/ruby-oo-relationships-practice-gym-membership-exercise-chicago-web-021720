@@ -44,5 +44,3 @@ describe Membership do
 
 end
 
-
-# DONE (.all): Get a list of all memberships

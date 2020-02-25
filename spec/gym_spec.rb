@@ -66,14 +66,3 @@ describe Gym do
     end
 
 end
-
-
-# DONE (.all): Get a list of all gyms
-
-# DONE (#memberships): Get a list of all memberships at a specific gym
-
-# DONE (#lifters): Get a list of all the lifters that have a membership to a specific gym
-
-# DONE (#lifter_names): Get a list of the names of all lifters that have a membership to that gym
-
-# DONE (#combined_lift_total): Get the combined lift total of every lifter has a membership to that gym

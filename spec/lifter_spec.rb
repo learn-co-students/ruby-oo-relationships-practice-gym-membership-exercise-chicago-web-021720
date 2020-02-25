@@ -78,16 +78,3 @@ describe Lifter do
     end
 
 end
-
-
-# DONE (.all): Get a list of all lifters
-
-# DONE (#memberships): Get a list of all the memberships that a specific lifter has
-
-# DONE (#gyms): Get a list of all the gyms that a specific lifter has memberships to
-
-# DONE (.average_lift_total): Get the average lift total of all lifters
-
-# DONE (#total_cost): Get the total cost of a specific lifter's gym memberships
-
-# DONE (#sign_up_for_gym): Given a gym and a membership cost, sign a specific lifter up for a new gym
